@@ -10,17 +10,9 @@ public class Alphabetizer {
 		str = str.replaceAll(
 		          "[^a-zA-Z]", "");
 		Character tempArray[] = new Character[str.length()];
-        
-     System.out.println("str="+str);
-      
-     
-    
-		for (int i = 0; i < str.length(); i++) {
+        	for (int i = 0; i < str.length(); i++) {
 			tempArray[i] = str.charAt(i);
 		}
-		
-		
-	
 		Arrays.sort(tempArray, new Comparator<Character>(){
 
 			@Override
